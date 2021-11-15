@@ -1,0 +1,73 @@
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #131219;
+    
+}
+
+:root{
+    --preto: #17161d;
+    --preto2: #131219;
+    --roxo: #5429CF;
+    --blue_white: #8b91fd;
+    --branco: #FFFFFF;
+    
+}
+
+h2{
+    color:#ffffe6;
+}
+
+.container{
+    margin: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.child{
+    margin: 16px ;
+}
+
+form{
+    width: max-content;
+    height: max-content;
+    padding: 16px 8px;
+    border: 2px solid var(--blue_white);
+    background-color: white;
+}
+
+.input-form{
+    margin: 8px;
+    padding: 8px;
+    width: 200px;
+}
+
+#input-msg{
+    margin: 8px;
+    padding: 8px 8px 150px 8px;
+    width: 420px;
+    resize: none;
+    
+}
+
+#button-form{
+    margin-left: 110px;
+}
+
+#contato{
+    width: 50%;
+    height: 410px;
+    
+    
+}
+
+#contato p{
+    margin-top: 150px;
+}
+
+#map{
+    position: relative;
+    width: 100%;
+}
