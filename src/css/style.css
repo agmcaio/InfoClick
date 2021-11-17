@@ -37,47 +37,11 @@ section .catalogo{
     padding: 100px;
 }
 
-section .filter-card{
-    width: 980px;
-    height: 150px;
-    background: var(--gray);
-    border-radius: 8px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.search-input{
-    width: 700px;
-    height: 50px;
-    border: none;
-    border-radius: 4px 0px 0px 4px;
-    text-indent: 10px;
-}
-
-.search-button{
-    width: 150px;
-    height: 50px;
-    border-radius: 0px 4px 4px 0px;
-    border: none;
-    border-left: 1px solid var(--preto);
-    background: var(--roxo);
-    color: var(--branco);
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: 0.2s ease;
-}
-
-.search-button:hover{
-    background: var(--branco);
-    color: var(--preto);
-}
-
 .title-wrapper-catalogo{
-    margin-top: 115px;
+    padding-top: 115px;
     padding-bottom: 20px;
+    padding-left: 11.5625rem;
+    margin-top: 100px;
 }
 
 .title-wrapper-catalogo h3{
@@ -86,12 +50,11 @@ section .filter-card{
 }
 
 section .card-wrapper{
-    max-width: 1000px;
-    height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    grid-gap: 30px;
-    padding-top: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 980px;
+    margin: 0 auto;
+    grid-gap: 40px;
 }
 
 section .card-item{
@@ -112,13 +75,24 @@ section .card-item{
 }
 
 .card-item img{
-    width: 65%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-item h3{
+    width: 90%;
+    text-align: center;
+    color: #ffff;
 }
 
 .card-item p{
     width: 90%;
     font-style: italic;
-    color: #ffffe6;
+    color: #ffffe69a;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .card-item button{
@@ -140,66 +114,69 @@ section .card-item{
     color: var(--preto);
 }
 
-/*Sobre nós*/
 
-.about{
-    width: 100%;
-    height: 100%;
-    display: flex; /*Alinhar itens internamente*/
-    align-items:center; /*alinha itens ao centro horizontalmente*/
-    justify-content: center; /*Alinhar itens verticalmente*/
-    padding: 50px 10px;
+/*Depoimento*/
+
+.depoimentos{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    background-color: #17161d;
 }
 
-.title-wrapper-about h3{
+.title-wrapper-depoimentos h3{
     font-size: 40px;
     color: var(--roxo);
+    padding-left: 11.5625rem;
+    margin-bottom: 50px;
 }
 
-.about-content{
-    max-width: 1000px;
-    min-width: 300px;
-    height: 600px;
-    background: var(--black);
+.title-wrapper-depoimentos p{
+    width: 60%;
+    font-size: 15px;
+    color: var(--branco);
+    padding-left: 11.5625rem
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 980px;
     margin: 0 auto;
-    border-radius: 8px;
-    z-index: 10;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    grid-gap: 40px;
+    margin-bottom: 50px;
 }
 
-.left{
-    width: 25%;
-    min-width: 300px;
-    height: 100%;
-    background-color: var(--blue);
-    border-radius: 8px;
-}
-
-.right{
-    width: 65%;
-    height: 100%;
+.card{
+    background-color: var(--roxo);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-top: 10%;
+    align-items: center;
+    padding: 35px 40px;
+    box-shadow: 6px 6px 5px #000000b9;
+    border-radius: 10px;
 }
 
-.right h3{
-    text-align: right;
-    width: 90%;
-    margin-bottom: 20px;
-    font-size: 25px;
+.card .user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    margin-bottom: 15px;
 }
 
-.right p{
-    max-width: 90%;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-align:right;
-    color: rgba(0, 0, 0, );
+.card h3{
+    margin-bottom: 10px;
+    color: var(--branco);
+}
+
+.card p{
+    text-align: center;
+    color: #ffffffb9;
+}
+
+
+.star{
+    width: 20px;
+    margin-bottom: 10px;
 }
