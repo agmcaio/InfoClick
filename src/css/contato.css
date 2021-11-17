@@ -1,8 +1,12 @@
-html, body{
-    width: 100%;
-    overflow-x: hidden;
-    background-color: #131219;
-    
+/*Resetando regras do css*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto';
 }
 
 :root{
@@ -15,59 +19,87 @@ html, body{
 }
 
 h2{
-    color:#ffffe6;
+    color:var(--roxo);
 }
 
 .container{
     margin: 0;
-    padding: 16px;
+    padding: 100px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
-.child{
-    margin: 16px ;
+
+#div-form h2, #div-form p {
+    margin-bottom: 20px;
 }
+
+/********* Formatação do formulario **********/
 
 form{
     width: max-content;
     height: max-content;
-    padding: 16px 8px;
-    border: 2px solid var(--blue_white);
-    background-color: white;
+    background-color: #131219;
+}
+
+input, textarea{
+    border: none;
+    border-radius: 10px;
+    background-color: #77767a31;
+}
+
+input::placeholder, textarea::placeholder{
+    color: white;
 }
 
 .input-form{
-    margin: 8px;
-    padding: 8px;
+    margin: 8px 8px 8px 0px;
+    padding: 10px;
     width: 200px;
 }
 
 #input-msg{
-    margin: 8px;
-    padding: 8px 8px 150px 8px;
-    width: 420px;
+    margin: 8px 8px 8px 0px;
+    padding: 10px 10px 100px 10px;
+    width: 410px;
     resize: none;
-    
 }
 
 #button-form{
-    margin-left: 110px;
+    width: 30%;
+    padding: 10px 0;
+    border: none;
+    background: var(--roxo);
+    border-radius: 10px;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
+#button-form:hover{
+    background-color: #5529cfc7;
+}
+
+/*******************************************/
+
+/********* Informaçoes de Contato **********/
+
 #contato{
-    width: 50%;
-    height: 410px;
-    
-    
+    margin-left: 25%;
+    height: max-content;
 }
 
 #contato p{
-    margin-top: 150px;
+    margin-top: 60px;
+    margin-leftdeem: 8px;
 }
 
+/*******************************************/
+
 #map{
+    margin-top: 20px;
     position: relative;
     width: 100%;
 }
