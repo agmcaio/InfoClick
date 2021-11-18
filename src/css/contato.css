@@ -23,9 +23,10 @@ h2{
 }
 
 .container{
-    padding: 100px;
+    padding: 100px 100px 50px 100px;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 
@@ -74,7 +75,7 @@ input::placeholder, textarea::placeholder{
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
-    margin-bottom: 10px;
+    
 }
 
 #button-form:hover{
@@ -88,9 +89,11 @@ input::placeholder, textarea::placeholder{
 #contato{
     margin-left: 25%;
     height: max-content;
+    
 }
 
-#contato p{
+#contato li{
+    color: white;
     margin-top: 60px;
     margin-left: 8px;
 }
