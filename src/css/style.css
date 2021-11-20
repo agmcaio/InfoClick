@@ -35,9 +35,8 @@ p{
     width: 100%;
     height: 500px;
     background-position: center bottom;
-    background-size: cover;
+    background-image: linear-gradient(rgb(85, 41, 207), rgba(0, 0, 0, 0.534));
     background-attachment: fixed;
-    background-image: linear-gradient(rgb(85, 41, 207), rgb(23, 22, 29));
 }
 
 
@@ -48,11 +47,10 @@ p{
     align-items: center;
     height: 500px;
     width: 100%;
-    z-index: auto;
 }
 
 
-.background-texto h2{
+.background-text h2{
     color: var(--branco);
     margin-top: 20px;
     margin-bottom:20px;
@@ -61,7 +59,7 @@ p{
     font-size: 50px;
 }
 
-.background-texto p{
+.background-text p{
     width: 100%;
     font-size: 20px;
     padding-left: 11rem;
@@ -78,21 +76,24 @@ p{
 
 }
 /*Produto - catálogo*/
-section .catalogo{
+.catalogo{
     width: 100vw;
-    padding: 100px;
+    padding: 50px 10px;
+
 }
 
 .title-wrapper-catalogo{
-    padding-top: 115px;
-    padding-bottom: 20px;
-    padding-left: 11.5625rem;
-    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .title-wrapper-catalogo h3{
     font-size: 40px;
     color: var(--roxo);
+}
+
+section .card-content{
+    margin: 0;
+    padding: 0;
 }
 
 section .card-wrapper{
@@ -105,11 +106,12 @@ section .card-wrapper{
 
 section .card-item{
     height: 400px;
-    background: var(--gray);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--branco);
+    border-radius: 10px;
 }
 
 .card-content{
@@ -129,16 +131,17 @@ section .card-item{
 .card-item h3{
     width: 90%;
     text-align: center;
-    color: #ffff;
+    color: var(--preto);
 }
 
 .card-item p{
     width: 90%;
     font-style: italic;
-    color: #ffffe69a;
+    color: var(--preto2);
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .card-item button{
@@ -156,8 +159,84 @@ section .card-item{
 }
 
 .card-item button:hover{
-    background-color: var(--branco);
-    color: var(--preto);
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+/*Sobre*/
+
+.sobre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+    background-color: var(--preto);
+}
+
+.title-wrapper-sobre h3{
+    font-size: 40px;
+    color: var(--roxo);
+    margin-bottom: 50px;
+}
+
+.title-wrapper-sobre p{
+    width: 60%;
+    font-size: 15px;
+    color: var(--branco);
+}
+
+.sobre-content{
+    max-width: 1000px;
+    min-width: 300px;
+    height: 600px;
+    background: var(--preto2);
+    margin: 0 auto;
+    border-radius: 10px;
+    z-index: 10;
+    padding: 0px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.column-left{
+    width: 25%;
+    min-width: 300px;
+    height: 100%;
+    border-radius: 10px;
+    background-image: url(https://image.freepik.com/vetores-gratis/icones-isometricos-de-dispositivos-eletronicos-inovadores-de-tecnologia-eletronica-definidos-com-fone-de-ouvido-de-realidade-virtual-relogio-inteligente-roxo_1284-29227.jpg);
+    background-position: -15px;
+    background-size: auto;
+}
+
+.column-right{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: flex-start;
+    padding-top: 10%;
+    padding-right: 35px;
+}
+
+.column-right h3{
+    text-align: right;
+    width: 65%;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #5429CF;
+}
+
+.column-right p{
+    max-width: 90%;
+    font: 1rem;
+    letter-spacing: 2px;
+    text-align: right;
 }
 
 
@@ -167,21 +246,22 @@ section .card-item{
     padding-top: 40px;
     padding-bottom: 20px;
     margin-top: 30px;
-    background-color: #17161d;
+    background-color: var(--preto2);
+}
+
+.title-wrapper-depoimentos{
+    margin-bottom: 50px;
 }
 
 .title-wrapper-depoimentos h3{
     font-size: 40px;
     color: var(--roxo);
-    padding-left: 11.5625rem;
-    margin-bottom: 50px;
 }
 
 .title-wrapper-depoimentos p{
     width: 60%;
     font-size: 15px;
     color: var(--branco);
-    padding-left: 11.5625rem
 }
 
 .cards{
@@ -225,4 +305,58 @@ section .card-item{
 .star{
     width: 20px;
     margin-bottom: 10px;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--preto);
+    padding-bottom: 1rem;
+}
+
+.footer-content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.footer-content h3{
+   font-size: 30px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   color: var(--branco);
+   border-radius: 15px;
+   background-color: var(--roxo);
+   border: 1px solid var(--roxo);
+   padding: 5px 10px 5px 10px;
+}
+
+.footer-content p{
+   font-size: 20px;
+   max-width: 500px;
+}
+
+.footer-content ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.footer-content ul li{
+    margin: 0 0.9rem;
+    padding: 3px;
+}
+
+.footer-content ul li a:hover{
+    border-bottom: 4px solid var(--roxo);
+}
+
+.footer-content ul li a i{
+    font-size: 2rem;
+}
+
+.footer-bottom{
+    text-align: center;
 }

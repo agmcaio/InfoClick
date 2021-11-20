@@ -71,7 +71,8 @@ section .card-item{
 }
 
 .card-item img {
-    width: 85%;
+    width: 100%;
+    align-items: center;
 }
 
 .card-item h4{
@@ -88,4 +89,88 @@ section .card-item{
     color: green;
     font-size: 15px;
 
+}
+
+.card-item button{
+
+padding: 15px 80px;
+border: none;
+background-color: purple;
+border-radius: 4px;
+color: white;
+font-weight: bold;
+font-size: 1,1em;
+cursor: pointer;
+transition: 0,3s ease;
+margin-bottom: 10px;
+}
+
+.card-item button:hover{
+background: #dedede;
+color: blue;
+}
+
+.background-texto{
+color: whitesmoke;
+text-align: center;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 24px;
+}
+
+.background-block {
+    width: 100%;
+    background-image: url(https://t2.tudocdn.net/529329); 
+    background-attachment: fixed;
+}
+
+.search-button {
+    position: relative;
+    left: 32%;
+    width: 14%;
+    padding: 14px 6px;
+    border: none;
+    background-color: purple;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 1,1em;
+    cursor: pointer;
+    transition: 0,3s ease;
+    
+
+}
+
+.search-input{
+position: relative;
+left: 32%;
+width: 75%;
+padding: 14px 10px;
+border-radius: 4px;
+cursor: pointer;
+margin-bottom: 10ox;
+}
+
+.title-wrapper-catalogo p{
+    text-decoration-color: whitesmoke;
+    text-align:start;
+    font-size: 30px;
+    position: absolute;
+    left: 32% ;
+    top: 650px;
+   
+    
+}
+
+
+.card-item{
+   position: relative;
+   left: 75%;
+}
+
+.title-wrapper-catalogo h3{
+    font-size: 25px;
+    color: whitesmoke;
+    position: relative;
+    left: 120px;
 }
