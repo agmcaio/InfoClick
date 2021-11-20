@@ -39,10 +39,10 @@ a, a:visited{
 header{
     width: 100%;
     height: 50%;
-    background-color: var(--preto);
+    background-color: var(--preto2);
 }
 
-.conteudo{/*Abordagem responsiva*/
+.content{/*Abordagem responsiva*/
     max-width: 1000px; /*Se tiver espaço, o máximo*/
     min-width: 300px; /*Se não tiver espaço, o mínimo*/
     margin: 0 auto;
