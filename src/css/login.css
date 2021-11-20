@@ -116,7 +116,7 @@ input::placeholder{
 }
 
 #line{
-    width: 95%;
+    width: 100%;
     margin-left: 8px;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -139,7 +139,6 @@ input::placeholder{
 }
 
 #facebook-button{
-    
     border: 1px solid #4088C4;
 }
 
@@ -147,4 +146,8 @@ input::placeholder{
     border: 1px solid #E72626;
 }
 
+#facebook-button:hover, #google-button:hover{
+    color: black;
+    background-color: #eee;
+}
 /*******************************************/
