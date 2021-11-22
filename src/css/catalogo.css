@@ -124,9 +124,7 @@ font-size: 24px;
     background-attachment: fixed;
 }
 
-.search-button {
-    position: relative;
-    left: 32%;
+.search-button {    
     width: 14%;
     padding: 14px 6px;
     border: none;
@@ -142,8 +140,6 @@ font-size: 24px;
 }
 
 .search-input{
-position: relative;
-left: 32%;
 width: 75%;
 padding: 14px 10px;
 border-radius: 4px;
@@ -163,14 +159,11 @@ margin-bottom: 10ox;
 }
 
 
-.card-item{
-   position: relative;
-   left: 75%;
-}
+
 
 .title-wrapper-catalogo h3{
     font-size: 25px;
     color: whitesmoke;
     position: relative;
-    left: 120px;
+    left: 60px;
 }
