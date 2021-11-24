@@ -153,15 +153,28 @@ input::placeholder{
 /*******************************************/
 
 @media screen and (max-width: 480px) {
+    body{
+        height: 100%;
+    }
     .container{
-        background-color: blue;
-        
         flex-direction: column;
-        flex-wrap: wrap;
+        height: max-content;
     }
 
     form{
-        width: 80%;
+        width: 90vw;
+        
     }
     
+    #button-social{
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #google-button, #facebook-button{
+        margin-top: 12px;
+    }
+   
 }

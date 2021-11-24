@@ -83,7 +83,7 @@ nav ul li a:hover{
     color: var(--roxo);
 }
 
-nav ul button{
+#button{
     border: 1px solid var(--branco);
     background-color: transparent;
     padding: 8px 30px;
@@ -93,9 +93,8 @@ nav ul button{
     border-radius: 5px;
 }
 
-button:hover{
+#button:hover{
     transition: color 0.5s;
     background-color: var(--roxo);
     color: var(--branco);
 }
-
