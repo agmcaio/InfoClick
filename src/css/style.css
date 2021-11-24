@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fira+Code:wght@400;600&family=Lobster&family=Roboto:wght@400;700&display=swap');
 
+/*==========Responsividade==========*/
+
+@media screen and (max-width: 760px){
+    .column-right button{
+       background-color: blue;
+    }
+}
+@media screen and (max-width: 600px){
+}
+
+
 /*Resetando regras do css*/
 *{
     margin: 0;
@@ -63,6 +74,7 @@ p{
 
 .background-text p{
     width: 100%;
+    max-width: 980px; 
     font-size: 20px;
     padding-left: 11rem;
 }
@@ -134,12 +146,14 @@ section .card-item{
 
 .card-item h3{
     width: 90%;
+    max-width: 900px;
     text-align: center;
     color: var(--preto);
 }
 
 .card-item p{
     width: 90%;
+    max-width: 900px;
     font-style: italic;
     color: var(--preto2);
     text-align: center;
