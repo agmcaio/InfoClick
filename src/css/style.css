@@ -146,12 +146,14 @@ section .card-item{
 
 .card-item h3{
     width: 90%;
+    max-width: 900px;
     text-align: center;
     color: var(--preto);
 }
 
 .card-item p{
     width: 90%;
+    max-width: 900px;
     font-style: italic;
     color: var(--preto2);
     text-align: center;
@@ -367,6 +369,7 @@ section .card-item{
 }
 
 /*==========================================*/
+
 /*Footer*/
 footer{
     background-color: var(--preto);
@@ -381,15 +384,11 @@ footer{
    text-align: center;
 }
 
-.footer-content h3{
-   font-size: 30px;
+.footer-content img{
+   
    margin-top: 15px;
    margin-bottom: 15px;
-   color: var(--branco);
-   border-radius: 15px;
-   background-color: var(--roxo);
-   border: 1px solid var(--roxo);
-   padding: 5px 10px 5px 10px;
+   
 }
 
 .footer-content p{
