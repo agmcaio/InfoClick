@@ -27,7 +27,7 @@ section .filter-card {
     height: 50px;
     border-radius: 0px 4px 4px 0px;
     border: none;
-    background: var(--purple);
+    background: var(--roxo);
     color:white;
     cursor: pointer;
     font-size: 1.1em;
@@ -70,10 +70,6 @@ section .card-item{
     justify-content: space-around;
 }
 
-.card-item img {
-    width: 100%;
-    align-items: center;
-}
 
 .card-item h4{
     width: 90%;
@@ -95,7 +91,7 @@ section .card-item{
 
 padding: 15px 80px;
 border: none;
-background-color: purple;
+background-color: var(--roxo);
 border-radius: 4px;
 color: white;
 font-weight: bold;
@@ -104,7 +100,6 @@ cursor: pointer;
 transition: 0,3s ease;
 margin-bottom: 10px;
 }
-
 .card-item button:hover{
 background: #dedede;
 color: blue;
@@ -118,8 +113,29 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 24px;
 }
 
+.background-text h2{
+    position: relative;
+    top: 170px;
+}
+
+.background-text p{
+    position: relative;
+    top:170px;
+}
+
+.title-wrapper-catalogo h3{
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
 .background-block {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
     width: 100%;
+    
     background-image: url(https://t2.tudocdn.net/529329); 
     background-attachment: fixed;
 }
@@ -128,7 +144,7 @@ font-size: 24px;
     width: 14%;
     padding: 14px 6px;
     border: none;
-    background-color: purple;
+    background-color: var(--roxo);
     border-radius: 4px;
     color: white;
     font-weight: bold;
@@ -151,17 +167,15 @@ margin-bottom: 10ox;
     text-decoration-color: whitesmoke;
     text-align:start;
     font-size: 30px;
-    position: absolute;
+    position: relative;
+    
     left: 32% ;
-    top: 650px;
+    top: -40px;
    
     
 }
 
-
-
-
-.title-wrapper-catalogo h3{
+.titlle-wrapper-catalogo h3{
     font-size: 25px;
     color: whitesmoke;
     position: relative;
