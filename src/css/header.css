@@ -60,11 +60,9 @@ nav{
 }
 
 .logo{
-    font-size: 24px;
-    color: var(--branco);
-    background-color: var(--roxo);
-    border-radius: 10px;
-    padding: 10px;
+    height: 48px;
+    width: 50px;
+
 }
 
 nav ul{

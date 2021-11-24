@@ -151,3 +151,17 @@ input::placeholder{
     background-color: #eee;
 }
 /*******************************************/
+
+@media screen and (max-width: 480px) {
+    .container{
+        background-color: blue;
+        
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    form{
+        width: 80%;
+    }
+    
+}
