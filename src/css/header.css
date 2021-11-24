@@ -43,7 +43,7 @@ header{
 }
 
 .content{/*Abordagem responsiva*/
-    width: 100%;
+    width: 90%;
     max-width: 980px; /*Se tiver espaço, o máximo*/
     min-width: 400px; /*Se não tiver espaço, o mínimo*/
     margin: 0 auto;

@@ -46,6 +46,7 @@ p{
 /*Banner*/
 .banner{
     width: 100%;
+    min-width: 900px;
     height: 500px;
     background-position: center bottom;
     background-image: linear-gradient(rgb(85, 41, 207), rgba(0, 0, 0, 0.534));
@@ -219,16 +220,13 @@ section .card-item{
     background-color: var(--preto);
 }
 
-.title-wrapper-sobre h3{
-    font-size: 40px;
-    color: var(--roxo);
+.title-wrapper-sobre {
     margin-bottom: 50px;
 }
 
-.title-wrapper-sobre p{
-    width: 60%;
-    font-size: 15px;
-    color: var(--branco);
+.title-wrapper-sobre h3{
+    font-size: 40px;
+    color: var(--roxo);
 }
 
 .sobre-content{
@@ -304,6 +302,7 @@ section .card-item{
 /*Depoimento*/
 
 .depoimentos{
+    padding: 50px 10px;
     padding-top: 40px;
     padding-bottom: 20px;
     margin-top: 30px;
@@ -317,12 +316,6 @@ section .card-item{
 .title-wrapper-depoimentos h3{
     font-size: 40px;
     color: var(--roxo);
-}
-
-.title-wrapper-depoimentos p{
-    width: 60%;
-    font-size: 15px;
-    color: var(--branco);
 }
 
 .cards{
