@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fira+Code:wght@400;600&family=Lobster&family=Roboto:wght@400;700&display=swap');
 
-/*==========Responsividade==========*/
-
-@media screen and (max-width: 760px){
-    .column-right button{
-       background-color: blue;
-    }
-}
-@media screen and (max-width: 600px){
-}
 
 
 /*Resetando regras do css*/
@@ -46,9 +37,8 @@ p{
 /*Banner*/
 .banner{
     width: 100%;
-    min-width: 900px;
+    min-width: 400px;
     height: 500px;
-    background-position: center bottom;
     background-image: linear-gradient(rgb(85, 41, 207), rgba(0, 0, 0, 0.534));
     background-attachment: fixed;
 }
@@ -63,13 +53,29 @@ p{
     width: 100%;
 }
 
+.background-block .img-block{
+    display: flex;
+    width: 50%;
+    max-width: 900%;
+    height: 100%;
+    position: relative;
+    -webkit-transform: scale(0.8, 0.8);;
+    padding: 0;
+    margin: 0;
+}
+
+.banner .background-text{
+    width: 100%;
+    max-width: 900px; /*Se tiver espaço, o máximo*/
+    margin: 0 auto;
+    padding: 0px 0rem 0px 3rem;
+}
+
+
 
 .background-text h2{
     color: var(--branco);
-    margin-top: 20px;
     margin-bottom:20px;
-    padding-left: 11rem;
-    padding-bottom: 15px;
     font-size: 50px;
 }
 
@@ -77,26 +83,15 @@ p{
     width: 100%;
     max-width: 980px; 
     font-size: 20px;
-    padding-left: 11rem;
 }
 
-.background-block .img-block{
-    display: flex;
-    width: 50%;
-    height: 100%;
-    position: relative;
-    -webkit-transform: scale(0.8, 0.8);;
-    padding: 0;
-    margin: 0;
-
-}
 
 /*==========================================*/
 /*Produto - catálogo*/
 .catalogo{
     width: 100vw;
     padding: 50px 10px;
-
+    
 }
 
 .title-wrapper-catalogo{
@@ -242,7 +237,7 @@ section .card-item{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
+    
 }
 
 .column-left{
@@ -341,7 +336,7 @@ section .card-item{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-
+    
     margin-bottom: 15px;
 }
 
@@ -370,23 +365,23 @@ footer{
 }
 
 .footer-content{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .footer-content img{
-   
-   margin-top: 15px;
-   margin-bottom: 15px;
-   
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
 }
 
 .footer-content p{
-   font-size: 20px;
-   max-width: 500px;
+    font-size: 20px;
+    max-width: 500px;
 }
 
 .footer-content ul{
@@ -412,3 +407,82 @@ footer{
 .footer-bottom{
     text-align: center;
 }
+
+/*==========Responsividade==========*/
+@media screen and (max-width: 960px){
+   body{
+       height: 100%;
+   }
+   /*=====Banner=====*/
+   .background-block .img-block{
+       display: none;
+   }
+   .img-block img{
+       display: none;
+   }
+   .banner .background-text{
+       text-align: center;
+       padding: 0 1rem;
+       margin: 0 auto;
+   }
+   .background-text h2{
+       padding: 1rem 1rem;
+   }
+
+   /*===Promoções===*/
+   .content{
+       margin: 20rem;
+   }
+
+   .content .card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+
+   section .card-item{
+    height: 500px;
+    width: 60%;
+   }
+
+   .card-item img{
+    -webkit-transform: scale(0.8, 0.8);
+   }
+   
+   .card-item button{
+       width: 30%;
+   }
+
+   /*======Sobre======*/
+   .column-right{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 0;
+       text-align: center;
+   }
+
+   .column-right h3{
+       width: 100%;
+       text-align: center;
+   }
+
+   .column-right p{
+       font-size: 0.9rem;
+       letter-spacing: 0.5;
+       text-align: center;
+   }
+}
+@media screen and (max-width: 770px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cards .user, .cards h3, .star{
+        margin-bottom: 15px ;
+    }
+}
+
+
