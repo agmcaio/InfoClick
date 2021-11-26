@@ -100,6 +100,9 @@ cursor: pointer;
 transition: 0,3s ease;
 margin-bottom: 10px;
 }
+
+
+
 .card-item button:hover{
 background: #dedede;
 color: blue;
@@ -175,9 +178,108 @@ margin-bottom: 10ox;
     
 }
 
+
+
+
 .titlle-wrapper-catalogo h3{
     font-size: 25px;
     color: whitesmoke;
     position: relative;
     left: 60px;
 }
+
+
+/*Footer*/
+footer{
+    background-color: var(--preto);
+    padding-bottom: 1rem;
+}
+
+.footer-content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.footer-content img{
+   
+   margin-top: 15px;
+   margin-bottom: 15px;
+   
+}
+
+.footer-content p{
+   font-size: 20px;
+   max-width: 500px;
+}
+
+.footer-content ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.footer-content ul li{
+    margin: 0 0.9rem;
+    padding: 3px;
+}
+
+.footer-content ul li a:hover{
+    border-bottom: 4px solid var(--roxo);
+}
+
+.footer-content ul li a i{
+    font-size: 2rem;
+}
+
+.footer-bottom{
+    text-align: center;
+
+}
+
+section .card-item {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--branco);
+    border-radius: 10px;
+}
+
+.card-item p {
+    width: 90%;
+    max-width: 900px;
+    font-style: italic;
+    color: var(--preto2);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+
+
+.card-item img {
+    width: 65%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-item h3 {
+    width: 90%;
+    max-width: 900px;
+    
+    color: var(--preto);
+    text-align: justify;
+    text-align: center;
+}
+
+
+
+
+
