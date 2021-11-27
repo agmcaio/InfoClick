@@ -38,14 +38,17 @@ a, a:visited{
 
 header{
     width: 100%;
+    max-width: 980px;
+    min-width: 360px;
+    margin: 0 auto;
     height: 50%;
     background-color: var(--preto2);
 }
 
 .content{/*Abordagem responsiva*/
-    width: 90%;
+    width: 100%;
     max-width: 980px; /*Se tiver espaço, o máximo*/
-    min-width: 400px; /*Se não tiver espaço, o mínimo*/
+    min-width: 360px; /*Se não tiver espaço, o mínimo*/
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -100,4 +103,14 @@ nav ul li a:hover{
     transition: color 0.5s;
     background-color: var(--roxo);
     color: var(--branco);
+}
+
+@media screen and (max-width: 360px){
+    #button{
+        margin-left: 5px;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
 }

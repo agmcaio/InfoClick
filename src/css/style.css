@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fira+Code:wght@400;600&family=Lobster&family=Roboto:wght@400;700&display=swap');
+@import 'animate.css';
 
-/*==========Responsividade==========*/
-
-@media screen and (max-width: 760px){
-    .column-right button{
-       background-color: blue;
-    }
+/*Animação*/
+.animateh2{
+    animation: bounceInLeft; 
+    animation-duration: 2s;
 }
-@media screen and (max-width: 600px){
+.animateP {
+    animation: bounceInLeft;
+    animation-duration: 2.8s;
 }
-
 
 /*Resetando regras do css*/
 *{
@@ -40,36 +40,76 @@ html, body{
 
 p{
     color:#ffffe6;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+}
+
+h2, h3, h4{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
 }
 
 /*==========================================*/
 /*Banner*/
 .banner{
     width: 100%;
-    min-width: 900px;
+    min-width: 360px;
     height: 500px;
-    background-position: center bottom;
-    background-image: linear-gradient(rgb(85, 41, 207), rgba(0, 0, 0, 0.534));
+    background-color: var(--preto);
     background-attachment: fixed;
+    border-top: 3px solid var(--roxo);
+    border-bottom: 3px solid var(--roxo);
+    display: flex;
+    align-items: center;
 }
 
+.banner .background-text{
+    width: 100%;
+    max-width: 900px; /*Se tiver espaço, o máximo*/
+    margin: 0 auto;
+}
+
+.banner span{
+    color: var(--roxo);
+}
 
 .background-block{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: auto;
     width: 100%;
 }
+
+.background-block .img-block{
+    width: 50%;
+    max-width: 980px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-block img{
+    position: relative;
+    -webkit-transform: scale(0.8, 0.8);;
+    padding: 0;
+    margin: 0;
+    height: max-content;
+    width: max-content;
+    padding-left: 1rem;
+}
+
 
 
 .background-text h2{
     color: var(--branco);
-    margin-top: 20px;
     margin-bottom:20px;
-    padding-left: 11rem;
-    padding-bottom: 15px;
     font-size: 50px;
 }
 
@@ -77,26 +117,15 @@ p{
     width: 100%;
     max-width: 980px; 
     font-size: 20px;
-    padding-left: 11rem;
 }
 
-.background-block .img-block{
-    display: flex;
-    width: 50%;
-    height: 100%;
-    position: relative;
-    -webkit-transform: scale(0.8, 0.8);;
-    padding: 0;
-    margin: 0;
-
-}
 
 /*==========================================*/
 /*Produto - catálogo*/
 .catalogo{
     width: 100vw;
     padding: 50px 10px;
-
+    
 }
 
 .title-wrapper-catalogo{
@@ -129,6 +158,16 @@ section .card-item{
     justify-content: space-around;
     background-color: var(--branco);
     border-radius: 10px;
+    
+    box-shadow: 0px 8px 1px var(--roxo);
+}
+
+section .card-item:hover{
+    margin-top: -5px;
+    margin-bottom: -5px;
+    margin-left: -5px;
+    margin-right: -3px;
+    box-shadow: 7px 7px 2px var(--roxo);
 }
 
 .card-content{
@@ -242,7 +281,7 @@ section .card-item{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
+    
 }
 
 .column-left{
@@ -337,11 +376,15 @@ section .card-item{
     border-radius: 10px;
 }
 
+.card:hover{
+    box-shadow: 6px 6px 1px #ffffffb9;
+    margin-top: -5px;
+}
 .card .user{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-
+    
     margin-bottom: 15px;
 }
 
@@ -370,23 +413,23 @@ footer{
 }
 
 .footer-content{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .footer-content img{
-   
-   margin-top: 15px;
-   margin-bottom: 15px;
-   
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
 }
 
 .footer-content p{
-   font-size: 20px;
-   max-width: 500px;
+    font-size: 20px;
+    max-width: 500px;
 }
 
 .footer-content ul{
@@ -412,3 +455,131 @@ footer{
 .footer-bottom{
     text-align: center;
 }
+
+/*==========Responsividade==========*/
+@media screen and (max-width: 960px){
+   body{
+       height: 100%;
+   }
+   /*=====Banner=====*/
+   .background-block .img-block{
+       display: none;
+   }
+   .img-block img{
+       display: none;
+   }
+   .banner .background-text{
+       text-align: center;
+       padding: 0 1rem;
+       margin: 0 auto;
+   }
+   .background-text h2{
+       padding: 1rem 1rem;
+   }
+
+   /*===Promoções===*/
+   .content{
+       margin: 20rem;
+   }
+
+   .content .card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+
+   section .card-item{
+    height: 500px;
+    width: 60%;
+   }
+
+   .card-item img{
+    -webkit-transform: scale(0.8, 0.8);
+   }
+   
+   .card-item button{
+       width: 30%;
+   }
+
+   /*======Sobre======*/
+   .column-right{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 0;
+       text-align: center;
+   }
+
+   .column-right h3{
+       width: 100%;
+       text-align: center;
+   }
+
+   .column-right p{
+       font-size: 0.9rem;
+       letter-spacing: 0.5;
+       text-align: center;
+   }
+}
+@media screen and (max-width: 768px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cards .user, .cards h3, .star{
+        margin-bottom: 15px ;
+    }
+
+    .column-left{
+        display: none;
+    }
+
+    .column-right{
+        letter-spacing: 3px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 360px){
+    
+    .background-text h2{
+        font-size: 35px;
+    }
+
+    .background-text p{
+        font-size: 15px;
+    }
+
+    section .card-item{
+        height: auto;
+        width: 100%;
+    }
+
+    .catalogo{
+        padding: 50px 0;
+    }
+
+    .column-left{
+        display: none;
+    }
+
+    .column-right{
+        letter-spacing: 0;
+        width: 100%;
+    }
+
+    .sobre-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .depoimentos{
+        padding: 0;
+    }
+}
+

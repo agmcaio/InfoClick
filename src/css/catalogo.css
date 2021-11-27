@@ -39,8 +39,8 @@ section .filter-card {
     color:var(--purple);
 }
 
-.title-wrapper-catalogo {
-    margin-top: 200px;
+.title-wrapper-catalogo p{
+    margin-top: 50px;
     padding-bottom: 20px;
 }
 
@@ -53,8 +53,8 @@ section .card-wrapper {
     padding-top: 50px;
 }
 section .card-item{
-    height: :400px;
-    background: :var(--purple);
+    height: 400px;
+    background: var(--purple);
     border-radius: 8px;
     display: flex;
     flex-direction:column;
