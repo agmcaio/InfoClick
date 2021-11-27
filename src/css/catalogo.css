@@ -141,7 +141,7 @@ font-size: 24px;
     position: relative;
     
     left: -35px ;
-    top: 0px;
+    top: 20px;
    
     
 }
@@ -281,7 +281,7 @@ section .card-item {
         border-radius: 4px;
         cursor: pointer;
         position: relative;
-        left: -300px;   
+        left: -270px;   
         }
     }
 
@@ -289,7 +289,8 @@ section .card-item {
       .search-button {
           width: 10%;
           position: relative;
-          left: -300px;
+          left: -270px;
+          
           
       }
     
@@ -298,14 +299,18 @@ section .card-item {
   @media (max-width:640px) {
     .title-wrapper-catalogo p{
         position: relative;
-        left: 80px;
+        left: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
 @media (max-width:640px) {
         .title-wrapper-catalogo h3{
             position: relative;
-            left: 120px;
+            left: 0px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
 @media (max-width:640px) {
@@ -319,5 +324,9 @@ section .card-item {
     .footer-content {
         margin-bottom: 15px;
     }
+    
+    .card-item{
+        margin-right: 10px;
+        margin-left: 10px;
     }
-}
+
