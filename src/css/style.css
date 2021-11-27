@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fira+Code:wght@400;600&family=Lobster&family=Roboto:wght@400;700&display=swap');
+@import 'animate.css';
 
-
+/*Animação*/
+.animateh2{
+    animation: bounceInLeft; 
+    animation-duration: 2s;
+}
+.animateP {
+    animation: bounceInLeft;
+    animation-duration: 2.8s;
+}
 
 /*Resetando regras do css*/
 *{
@@ -31,44 +40,69 @@ html, body{
 
 p{
     color:#ffffe6;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+}
+
+h2, h3, h4{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
 }
 
 /*==========================================*/
 /*Banner*/
 .banner{
     width: 100%;
-    min-width: 400px;
+    min-width: 360px;
     height: 500px;
-    background-image: linear-gradient(rgb(85, 41, 207), rgba(0, 0, 0, 0.534));
+    background-color: var(--preto);
     background-attachment: fixed;
-}
-
-
-.background-block{
+    border-top: 3px solid var(--roxo);
+    border-bottom: 3px solid var(--roxo);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 100%;
-}
-
-.background-block .img-block{
-    display: flex;
-    width: 50%;
-    max-width: 900%;
-    height: 100%;
-    position: relative;
-    -webkit-transform: scale(0.8, 0.8);;
-    padding: 0;
-    margin: 0;
 }
 
 .banner .background-text{
     width: 100%;
     max-width: 900px; /*Se tiver espaço, o máximo*/
     margin: 0 auto;
-    padding: 0px 0rem 0px 3rem;
+}
+
+.banner span{
+    color: var(--roxo);
+}
+
+.background-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.background-block .img-block{
+    width: 50%;
+    max-width: 980px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-block img{
+    position: relative;
+    -webkit-transform: scale(0.8, 0.8);;
+    padding: 0;
+    margin: 0;
+    height: max-content;
+    width: max-content;
+    padding-left: 1rem;
 }
 
 
@@ -124,6 +158,16 @@ section .card-item{
     justify-content: space-around;
     background-color: var(--branco);
     border-radius: 10px;
+    
+    box-shadow: 0px 8px 1px var(--roxo);
+}
+
+section .card-item:hover{
+    margin-top: -5px;
+    margin-bottom: -5px;
+    margin-left: -5px;
+    margin-right: -3px;
+    box-shadow: 7px 7px 2px var(--roxo);
 }
 
 .card-content{
@@ -332,6 +376,10 @@ section .card-item{
     border-radius: 10px;
 }
 
+.card:hover{
+    box-shadow: 6px 6px 1px #ffffffb9;
+    margin-top: -5px;
+}
 .card .user{
     width: 100px;
     height: 100px;
@@ -474,7 +522,7 @@ footer{
        text-align: center;
    }
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 768px){
     .cards{
         display: flex;
         flex-wrap: wrap;
@@ -482,6 +530,56 @@ footer{
 
     .cards .user, .cards h3, .star{
         margin-bottom: 15px ;
+    }
+
+    .column-left{
+        display: none;
+    }
+
+    .column-right{
+        letter-spacing: 3px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 360px){
+    
+    .background-text h2{
+        font-size: 35px;
+    }
+
+    .background-text p{
+        font-size: 15px;
+    }
+
+    section .card-item{
+        height: auto;
+        width: 100%;
+    }
+
+    .catalogo{
+        padding: 50px 0;
+    }
+
+    .column-left{
+        display: none;
+    }
+
+    .column-right{
+        letter-spacing: 0;
+        width: 100%;
+    }
+
+    .sobre-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .depoimentos{
+        padding: 0;
     }
 }
 

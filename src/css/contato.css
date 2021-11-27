@@ -28,7 +28,8 @@ h2{
     height: 500px;
     background-position: center bottom;
     background-color: var(--preto);
-    border-bottom: 2px solid var(--roxo);
+    border-top: 3px solid var(--roxo);
+    border-bottom: 3px solid var(--roxo);
     background-attachment: fixed;
 }
 
