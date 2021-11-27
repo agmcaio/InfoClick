@@ -127,8 +127,8 @@ font-size: 24px;
 }
 
 .title-wrapper-catalogo h3{
-    font-size: 25px;
-    color: whitesmoke;
+    font-size: 40px;
+    color: purple;
     font-weight: bold;
 }
 
@@ -169,24 +169,15 @@ margin-bottom: 10ox;
 .title-wrapper-catalogo p{
     text-decoration-color: whitesmoke;
     text-align:start;
-    font-size: 30px;
+    font-size: 18x;
     position: relative;
     
-    left: 32% ;
-    top: -40px;
+    left: -35px ;
+    top: 0px;
    
     
 }
 
-
-
-
-.titlle-wrapper-catalogo h3{
-    font-size: 25px;
-    color: whitesmoke;
-    position: relative;
-    left: 60px;
-}
 
 
 /*Footer*/
@@ -280,6 +271,44 @@ section .card-item {
 }
 
 
+@media (max-width:640px) {
+    .search-input{
+        width: 30%;
+        padding: 14px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+        left: -300px;   
+        }
+    }
 
+  @media (max-width: 640px) {
+      .search-button {
+          width: 10%;
+          position: relative;
+          left: -300px;
+          
+      }
+    
+  }
+      
+  @media (max-width:640px) {
+    .title-wrapper-catalogo p{
+        position: relative;
+        left: 80px;
+    }
+}
+
+    @media (max-width:640px) {
+        .title-wrapper-catalogo h3{
+            position: relative;
+            left: 120px;
+        }
+
+@media (max-width:640px) {
+    .background-text p, .background-text h2 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
 
