@@ -1,0 +1,334 @@
+/*Resetando regras do css*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto';
+}
+
+:root{
+    --preto: #17161d;
+    --preto2: #131219;
+    --roxo: #5429CF;
+    --blue_white: #8b91fd;
+    --branco: #FFFFFF;
+    
+}
+
+h2{
+    
+    color:var(--roxo);
+}
+
+/*Banner*/
+.banner{
+    width: 100%;
+    height: 500px;
+    background-position: center bottom;
+    background-color: var(--preto);
+    border-top: 3px solid var(--roxo);
+    border-bottom: 3px solid var(--roxo);
+    background-attachment: fixed;
+}
+
+
+.background-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    height: 500px;
+    width: 100%;
+}
+
+.background-text h2{
+    color: var(--branco);
+    margin-bottom:20px;
+    font-size: 50px;
+}
+
+.background-text p{
+    width: 100%;
+    max-width: 980px; 
+    font-size: 20px;
+}
+
+.background-block .img-block{
+    display: flex;
+    position: relative;
+    -webkit-transform: scale(0.8, 0.8);;
+    padding: 0;
+    margin: 0;
+
+}
+
+/*==========================================*/
+
+.container{
+    padding: 100px 100px 50px 100px;
+    display: flex;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--roxo);
+}
+
+/********* Formatação do formulario **********/
+
+#div-form h2, #div-form p {
+    margin-bottom: 20px;
+}
+
+form{
+    width: 100%;
+    min-width: max-content;
+    height: max-content;
+    background-color: #131219;
+}
+
+input, textarea{
+    border: none;
+    border-radius: 10px;
+    background-color: #77767a31;
+    color: white;
+}
+
+input::placeholder, textarea::placeholder{
+    color: white;
+}
+
+.input-form{
+    margin: 8px 8px 8px 0px;
+    padding: 10px;
+    width: 200px;
+}
+
+#input-msg{
+    margin: 8px 8px 8px 0px;
+    padding: 10px 10px 100px 10px;
+    width: 410px;
+    resize: none;
+}
+
+#button-form{
+    width: 30%;
+    padding: 10px 0;
+    border: none;
+    background: var(--roxo);
+    border-radius: 10px;
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    
+}
+
+#button-form:hover{
+    background-color: #5529cfc7;
+}
+
+/*******************************************/
+
+/********* Informaçoes de Contato **********/
+
+#contato{
+    margin-left: 25%;
+    height: max-content;
+    
+}
+
+#contato li{
+    color: white;
+    margin-top: 60px;
+    margin-left: 8px;
+}
+
+/*******************************************/
+
+#map{
+    position: relative;
+    width: 100%;
+
+}
+
+/******* Responsividade Tablets v1 ********/
+
+@media screen and (max-width: 960px) and (min-width: 756px){
+
+    .background-block{
+       margin: 0px;
+    }
+
+    .background-text h2{
+        text-align: center;
+        padding-left: 16px;
+    }
+
+    .background-text p{
+        padding-left: 32px;
+        text-align: center;
+    }
+
+    .container{
+        margin: 16px;
+        padding: 0px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-bottom: 2px solid var(--roxo);
+    }
+
+    .img-block img{
+        display: none;
+    }
+
+    form{
+        height: max-content;
+        width: 50vw;
+        padding-bottom: 16px;
+    }
+
+    #button-form{
+        width: 410px;
+    }
+    
+    #contato{
+        margin: 0px 0px 0px 16px;
+    }
+
+    #contato h2{
+        text-align: center;
+    }
+}
+
+/***************************************/
+
+/******* Responsividade Tablets Small ********/
+
+@media screen and (max-width: 755px) and (min-width: 501px){
+
+    .background-block{
+        margin: 0px;
+     }
+
+    .background-text h2{
+        text-align: center;
+        padding-left: 16px;
+    }
+
+    .background-text p{
+        width: 90vw;
+        padding-left: 32px;
+        text-align: center;
+    }
+
+    .container{
+        padding: 0px;
+        margin: 16px 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        border-bottom: 2px solid var(--roxo);
+        
+    }
+
+    .img-block img{
+        display: none;
+    }
+
+    div.form{
+        width: 90%;
+    }
+
+    form{
+        width: 50vw;
+        border-bottom: 2px solid var(--roxo);
+        padding-bottom: 16px;
+    }
+
+    #button-form{
+        width: 98%;
+    }
+    
+    #contato{
+        margin: 16px 8px 0px 8px;
+        width: 70%;
+        margin: 16px 0px;
+    }
+
+    #contato h2{
+        text-align: center;
+    }
+
+    #contato ul{
+        margin-bottom: 32px;
+    }
+
+}
+
+/***************************************/
+
+/******* Responsividade Smartphones ********/
+
+@media screen and (max-width: 500px) {
+
+
+    .background-block{
+        margin: 0px;
+     }
+
+    .background-text h2{
+        text-align: center;
+        font-size: 30px;
+        padding-left: 16px;
+        
+    }
+
+    .background-text p{
+        font-size: 20px;
+        padding-left: 32px;
+        text-align: center;
+    }
+
+    .container{
+        margin: 16px;
+        padding: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+    .img-block img{
+        display: none;
+    }
+
+    form{
+        width: 90vw;
+        min-width: 0px;
+        border-bottom: 2px solid var(--roxo);
+        padding-bottom: 16px;
+    }
+    
+    .input-form, #input-msg, #button-form{
+        width: 90vw;
+    }
+
+    br{
+        display: none;
+    }
+
+    #contato{
+        margin: 16px 8px;
+    }
+
+    #contato h2{
+        text-align: center;
+    }
+
+    #contato ul{
+        margin-bottom: 32px;
+    }
+}
+
+/*******************************************/
