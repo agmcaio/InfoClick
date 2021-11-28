@@ -140,7 +140,8 @@ section .card-item {
 }
 
 .card-item img {
-  height: 20vh;
+  
+  max-height: 150px;
 }
 
 .card-item h4 {
