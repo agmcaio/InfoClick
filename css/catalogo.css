@@ -90,6 +90,7 @@ section .catalogo {
 
 section .card-item{
     height: 400px;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
