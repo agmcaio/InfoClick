@@ -17,6 +17,12 @@
   --branco: #ffffff;
 }
 
+p, h1, h2, h3{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+	user-select: none;
+}
 /******************  Banner *********************/
 .banner {
   width: 100%;
@@ -61,12 +67,11 @@
 
 .img-block img {
   position: relative;
-  -webkit-transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.6, 0.6);
   padding: 0;
   margin: 0;
   height: max-content;
   width: max-content;
-  padding-left: 1rem;
 }
 
 .background-text h2 {
@@ -140,23 +145,7 @@ section .card-item {
 }
 
 .card-item img {
-  
   max-height: 150px;
-}
-
-.card-item h4 {
-  width: 90%;
-}
-
-.card-item p {
-  width: 90%;
-  font-style: italic;
-  color: white;
-}
-
-.card-item h3 {
-  color: green;
-  font-size: 15px;
 }
 
 .card-item button {
@@ -190,9 +179,8 @@ section .card-item {
 }
 
 .title-wrapper-catalogo p {
-  text-decoration-color: whitesmoke;
   text-align: start;
-  font-size: 18x;
+  font-size: 18px;
   position: relative;
   left: -35px;
   top: 20px;
@@ -242,7 +230,7 @@ section .card-item {
   width: 90%;
   max-width: 900px;
   font-style: italic;
-  color: var(--preto2);
+  color: #424242;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -253,8 +241,7 @@ section .card-item {
 .card-item h3 {
   width: 90%;
   max-width: 900px;
-
-  color: var(--preto);
+  color: black;
   text-align: justify;
   text-align: center;
 }

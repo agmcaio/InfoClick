@@ -310,7 +310,11 @@ section .card-item:hover{
     width: 65%;
     margin-bottom: 30px;
     font-size: 30px;
-    color: #5429CF;
+    color: var(--branco);
+}
+
+.column-right span{
+    color: var(--roxo);
 }
 
 .column-right p{

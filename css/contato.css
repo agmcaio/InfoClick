@@ -27,7 +27,6 @@ h2{
 .banner{
     width: 100%;
     height: 500px;
-    background-position: center bottom;
     background-color: var(--preto);
     border-top: 3px solid var(--roxo);
     border-bottom: 3px solid var(--roxo);
