@@ -309,8 +309,6 @@ section .card-item {
   .title-wrapper-catalogo p {
     position: relative;
     left: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   .title-wrapper-catalogo h3 {
@@ -322,8 +320,7 @@ section .card-item {
 
   .background-text p,
   .background-text h2 {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: auto;
   }
 
   .card-wrapper {
