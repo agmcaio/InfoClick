@@ -246,7 +246,7 @@ section .card-item {
   text-align: center;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   /*=====Banner=====*/
   .background-block .img-block {
     display: none;
@@ -284,7 +284,7 @@ section .card-item {
   }
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 480px) {
   /*=====Banner=====*/
 
   .background-block {

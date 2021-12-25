@@ -495,7 +495,7 @@ footer{
 
    section .card-item{
     height: 500px;
-    width: 60%;
+    width: 90%;
    }
 
    .card-item img{
@@ -547,7 +547,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 480px){
     
     .background-text h2{
         font-size: 35px;
@@ -557,9 +557,13 @@ footer{
         font-size: 15px;
     }
 
+    section .card-wrapper{
+        gap: 60px;
+    }
+
     section .card-item{
         height: auto;
-        width: 100%;
+        width: 90%;
     }
 
     .catalogo{
