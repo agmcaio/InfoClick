@@ -489,6 +489,7 @@ footer{
    .content .card-wrapper{
     display: flex;
     flex-wrap: wrap;
+    gap: 35px;
     justify-content: center;
     align-items: center;
    }
