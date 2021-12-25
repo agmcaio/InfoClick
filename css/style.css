@@ -565,6 +565,7 @@ footer{
     section .card-item{
         height: auto;
         width: 90%;
+        margin-bottom: 20px;
     }
 
     .catalogo{
