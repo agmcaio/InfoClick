@@ -95,7 +95,6 @@ section .catalogo {
 
 section .card-item{
     height: 400px;
-    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,16 +233,16 @@ section .card-item {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
-  font-weight: 700;
-  text-align: justify;
+  text-align: center;
+  font-size: 14px;
 }
 
 .card-item h3 {
   width: 90%;
   max-width: 900px;
   color: black;
-  text-align: justify;
   text-align: center;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {

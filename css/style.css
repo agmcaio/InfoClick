@@ -15,11 +15,7 @@
 *{
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    text-decoration: none;
     box-sizing: border-box;
-    outline: none;
-    font-family: 'Roboto';
 }
 
 :root{
@@ -35,7 +31,6 @@ html, body{
     width: 100%;
     overflow-x: hidden;
     background-color: var(--preto2);
-    
 }
 
 p{
@@ -46,11 +41,15 @@ p{
 	user-select: none;
 }
 
-h2, h3, h4{
+h1, h2, h3, h4, h5, h6, p{
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
 	user-select: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "roboto";
+    font-weight: 700;
 }
 
 /*==========================================*/
@@ -189,6 +188,7 @@ section .card-item:hover{
     max-width: 900px;
     text-align: center;
     color: var(--preto);
+    font-size: 20px;
 }
 
 .card-item p{
@@ -199,7 +199,8 @@ section .card-item:hover{
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .card-item button{
@@ -308,7 +309,7 @@ section .card-item:hover{
 .column-right h3{
     text-align: right;
     width: 65%;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 30px;
     color: var(--branco);
 }
@@ -332,7 +333,7 @@ section .card-item:hover{
     border: none;
     border-radius: 4px;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 25px;
     cursor: pointer;
 }
 
@@ -511,7 +512,7 @@ footer{
    }
    
    .card-item button{
-       width: 30%;
+       width: 50%;
    }
 
    /*======Sobre======*/
@@ -519,19 +520,21 @@ footer{
        display: flex;
        justify-content: center;
        align-items: center;
-       padding: 0;
+       padding: 10px;
        text-align: center;
    }
 
    .column-right h3{
-       width: 100%;
+       width: 90%;
        text-align: center;
+       font-size: 25px;
    }
 
    .column-right p{
-       font-size: 0.9rem;
+       font-size: 13px;
        letter-spacing: 0.5;
        text-align: center;
+       margin-top: 5px;
    }
 }
 @media screen and (max-width: 768px){
