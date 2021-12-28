@@ -133,10 +133,12 @@ nav ul li a:hover{
         align-items: center;
     }
     .navbar{
-        margin: 0;
+        top: 0;
+        position: fixed;
         background-color: #131219;
         display: flex;
         align-items: center;
+        z-index: 10;
     }
 
     .navbar-collapse{

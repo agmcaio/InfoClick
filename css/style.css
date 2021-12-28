@@ -260,6 +260,10 @@ section .card-item:hover{
     background-color: var(--preto);
 }
 
+.content{
+    z-index: 0;
+}
+
 .title-wrapper-sobre {
     margin-bottom: 50px;
 }
