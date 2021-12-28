@@ -36,9 +36,16 @@ a, a:visited{
     text-decoration: none;
 }
 
+ul{
+    margin: 0;
+}
+
+.nav-menu-mobile{
+    display: none;
+}
+
 header{
     width: 100%;
-    max-width: 980px;
     min-width: 360px;
     margin: 0 auto;
     height: 50%;
@@ -105,12 +112,46 @@ nav ul li a:hover{
     color: var(--branco);
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 480px){
+    
     #button{
         margin-left: 5px;
     }
+
     nav{
+        display: none;
+    }
+
+    header .content{
+        padding: 0;
+    }
+
+    .nav-menu-mobile{
+        background-color: white;
+        margin: 0;
         display: flex;
-        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        margin: 0;
+        background-color: #131219;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-collapse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navbar-nav{
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .dropdown-item{
+        color: var(--branco);
     }
 }
