@@ -408,6 +408,13 @@ section .card-item:hover{
     margin-bottom: 10px;
 }
 
+.star:hover{
+    margin-top: -5px;
+    transform: rotate(90deg);
+}
+
+
+
 /*==========================================*/
 
 /*Footer*/
