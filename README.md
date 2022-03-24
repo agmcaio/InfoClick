@@ -1,5 +1,5 @@
-# Projeto Final da cadeira de Linguagens de Marcação no curso de graduação em Sistemas para Internet.
+# Site que mostra os melhores preços das melhores lojas de produtos eletrônicos.
 
-## O projeto consiste em um site que mostra os melhores preços de equipamentos tecnológicos.
+Esse projeto foi uma ideia de site desenvolvido pelo meu grupo na disciplina de Linguagens de Marcação no curso de graduação em Sistemas para Internet.
 
-## Feito utilizando HTML, CSS e Bootstrap com o objetivo de colocar em prática o conhecimento teórico obtido durante as aulas da disciplina LM.
+Utilizamos: HTML, CSS, JavaScript e Bootstrap para criar o site.
