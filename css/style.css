@@ -21,7 +21,7 @@
 :root{
     --preto: #17161d;
     --preto2: #131219;
-    --roxo: #5429CF;
+    --purple: #5429CF;
     --blue_white: #8b91fd;
     --branco: #FFFFFF;
     
@@ -29,23 +29,14 @@
 
 html, body{
     width: 100%;
-    overflow-x: hidden;
     background-color: var(--preto2);
 }
 
 p{
     color:#ffffe6;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-	user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6, p{
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-	user-select: none;
     margin-top: 0;
     margin-bottom: 0;
     font-family: "roboto";
@@ -60,8 +51,8 @@ h1, h2, h3, h4, h5, h6, p{
     height: 500px;
     background-color: var(--preto);
     background-attachment: fixed;
-    border-top: 3px solid var(--roxo);
-    border-bottom: 3px solid var(--roxo);
+    border-top: 3px solid var(--purple);
+    border-bottom: 3px solid var(--purple);
     display: flex;
     align-items: center;
 }
@@ -73,7 +64,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .banner span{
-    color: var(--roxo);
+    color: var(--purple);
 }
 
 .background-block{
@@ -104,8 +95,6 @@ h1, h2, h3, h4, h5, h6, p{
     padding-left: 1rem;
 }
 
-
-
 .background-text h2{
     color: var(--branco);
     margin-bottom:20px;
@@ -118,8 +107,8 @@ h1, h2, h3, h4, h5, h6, p{
     font-size: 20px;
 }
 
-
 /*==========================================*/
+
 /*Produto - catálogo*/
 .catalogo{
     width: 100vw;
@@ -133,7 +122,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .title-wrapper-catalogo h3{
     font-size: 40px;
-    color: var(--roxo);
+    color: var(--purple);
 }
 
 section .card-content{
@@ -158,7 +147,7 @@ section .card-item{
     background-color: var(--branco);
     border-radius: 10px;
     
-    box-shadow: 0px 8px 1px var(--roxo);
+    box-shadow: 0px 8px 1px var(--purple);
 }
 
 section .card-item:hover{
@@ -166,7 +155,7 @@ section .card-item:hover{
     margin-bottom: -5px;
     margin-left: -5px;
     margin-right: -3px;
-    box-shadow: 7px 7px 2px var(--roxo);
+    box-shadow: 7px 7px 2px var(--purple);
 }
 
 .card-content{
@@ -233,7 +222,7 @@ section .card-item:hover{
     padding: 10px 10px; 
     cursor: pointer;
     border: none;
-    background-color: var(--roxo);
+    background-color: var(--purple);
     color: var(--branco);
     border-radius: 4px;
     width: auto;
@@ -244,7 +233,7 @@ section .card-item:hover{
 
 .button-catalogos .button:hover{
     background-color: var(--preto2);
-    border-bottom: 4px solid var(--roxo) ;
+    border-bottom: 4px solid var(--purple) ;
 }
 
 /*==========================================*/
@@ -270,7 +259,7 @@ section .card-item:hover{
 
 .title-wrapper-sobre h3{
     font-size: 40px;
-    color: var(--roxo);
+    color: var(--purple);
 }
 
 .sobre-content{
@@ -319,7 +308,7 @@ section .card-item:hover{
 }
 
 .column-right span{
-    color: var(--roxo);
+    color: var(--purple);
 }
 
 .column-right p{
@@ -333,7 +322,7 @@ section .card-item:hover{
     font-size: 20px;
     padding: 10px;
     color: var(--branco);
-    background-color: var(--roxo);
+    background-color: var(--purple);
     border: none;
     border-radius: 4px;
     font-weight: bold;
@@ -342,7 +331,7 @@ section .card-item:hover{
 }
 
 .column-right button:hover{
-    border-bottom: 3px solid var(--roxo);
+    border-bottom: 3px solid var(--purple);
     background-color: transparent;
 }
 
@@ -363,7 +352,7 @@ section .card-item:hover{
 
 .title-wrapper-depoimentos h3{
     font-size: 40px;
-    color: var(--roxo);
+    color: var(--purple);
 }
 
 .cards{
@@ -376,7 +365,7 @@ section .card-item:hover{
 }
 
 .card{
-    background-color: var(--roxo);
+    background-color: var(--purple);
     display: flex;
     flex-direction: column;
     align-items: center;

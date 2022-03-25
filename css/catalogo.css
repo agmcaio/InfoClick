@@ -12,17 +12,18 @@
 :root {
   --preto: #17161d;
   --preto2: #131219;
-  --roxo: #5429cf;
+  --purple: #5429cf;
   --blue_white: #8b91fd;
   --branco: #ffffff;
 }
 
-p, h1, h2, h3{
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-	user-select: none;
+h1, h2, h3, h4, h5, h6, p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "roboto";
+    font-weight: 700;
 }
+
 /******************  Banner *********************/
 .banner {
   width: 100%;
@@ -30,8 +31,8 @@ p, h1, h2, h3{
   height: 500px;
   background-color: var(--preto);
   background-attachment: fixed;
-  border-top: 3px solid var(--roxo);
-  border-bottom: 3px solid var(--roxo);
+  border-top: 3px solid var(--purple);
+  border-bottom: 3px solid var(--purple);
   display: flex;
   align-items: center;
 }
@@ -43,16 +44,14 @@ p, h1, h2, h3{
 }
 
 .banner span {
-  color: var(--roxo);
+  color: var(--purple);
 }
 
 .background-block {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: auto;
-  margin: 0px 165px;
   width: 100%;
 }
 
@@ -88,20 +87,56 @@ p, h1, h2, h3{
 
 /*==========================================*/
 
-section .catalogo {
-  width: 100%;
-  padding: 100px;
+ .catalogo {
+  padding: 50px 10px;
 }
 
-section .card-item{
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--branco);
-    border-radius: 10px;
-    box-shadow: 0px 8px 1px var(--roxo);
+.title-wrapper-catalogo h3 {
+  font-size: 40px;
+  color: var(--purple);
+}
+
+.filter-card{
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 4px;
+  margin: 32px 0px;
+  border: none;
+}
+
+.search-button {
+  width: 50px;
+  padding: 15px 0px;
+  margin-left: -1%;
+  border: none;
+  border-radius: 4px;
+  color: #3e3e3e;
+  cursor: pointer;
+}
+
+section .card-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  object-fit: contain;
+  grid-gap: 50px;
+}
+
+section .card-item {
+  height: 400px;
+  padding: 0px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--branco);
+  box-shadow: 0px 8px 1px var(--purple);
+  border-radius: 10px;
 }
 
 section .card-item:hover{
@@ -109,30 +144,7 @@ section .card-item:hover{
     margin-bottom: -5px;
     margin-left: -5px;
     margin-right: -3px;
-    box-shadow: 7px 7px 2px var(--roxo);
-}
-
-.title-wrapper-catalogo p {
-  margin-top: 50px;
-  padding-bottom: 20px;
-}
-
-section .card-wrapper {
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  grid-gap: 50px;
-  padding: 50px 0px;
-}
-
-section .card-item {
-  height: 400px;
-  background: var(--purple);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+    box-shadow: 7px 7px 2px var(--purple);
 }
 
 .card-content {
@@ -145,12 +157,14 @@ section .card-item {
 
 .card-item img {
   max-height: 150px;
+  max-width: 250px;
+  width: auto;
 }
 
 .card-item button {
   padding: 15px 80px;
   border: none;
-  background-color: var(--roxo);
+  background-color: var(--purple);
   border-radius: 4px;
   color: white;
   font-weight: bold;
@@ -162,79 +176,12 @@ section .card-item {
 
 .card-item button:hover{
     background-color: var(--preto);
-    color: var(--branco);
-}
-
-.title-wrapper-catalogo {
-  margin-left: 5%;
-}
-
-.title-wrapper-catalogo h3 {
-  font-size: 40px;
-  color: var(--roxo);
-  font-weight: bold;
-  position: relative;
-  left: -35px;
-}
-
-.title-wrapper-catalogo p {
-  text-align: start;
-  font-size: 18px;
-  position: relative;
-  left: -35px;
-  top: 20px;
-}
-
-.background-block {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  width: 100%;
-  border-top: 3px solid var(--roxo);
-  border-bottom: 3px solid var(--roxo);
-  background-color: var(--preto);
-  background-attachment: fixed;
-}
-
-.search-button {
-  width: 40px;
-  padding: 15px 0px;
-  margin-left: -40px;
-  border: none;
-  border-radius: 4px;
-  color: #3e3e3e;
-  cursor: pointer;
-}
-
-.search-input {
-  width: 70%;
-  padding: 15px 10px;
-  border-radius: 4px;
-  margin: 32px 0px 10px 15%;
-  border: none;
-}
-
-section .card-item {
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--branco);
-  border-radius: 10px;
 }
 
 .card-item p {
-  width: 90%;
-  max-width: 900px;
+  text-align: center;
   font-style: italic;
   color: #424242;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 14px;
 }
 
 .card-item h3 {
@@ -245,90 +192,41 @@ section .card-item {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 768px) {
-  /*=====Banner=====*/
-  .background-block .img-block {
+@media screen and (max-width: 960px) {
+    /*=====Banner=====*/
+  .background-block .img-block{
     display: none;
   }
-  .img-block img {
-    display: none;
-  }
-  .banner .background-text {
+
+  .banner .background-text{
+    width: 100%;
+    max-width: 960px;
     text-align: center;
     padding: 0 1rem;
     margin: 0 auto;
   }
-  .background-text h2 {
+
+  .background-text h2{
     padding: 1rem 1rem;
   }
-
-  .title-wrapper-catalogo p {
-    position: relative;
-    left: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .title-wrapper-catalogo h3 {
-    position: relative;
-    left: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .background-text p,
-  .background-text h2 {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
+  /*=====================*/
 }
 
 @media screen and (max-width: 480px) {
-  /*=====Banner=====*/
 
-  .background-block {
-    margin: auto;
+  .background-text h2{
+    font-size: 35px;
+}
+
+  .background-text p{
+      font-size: 15px;
   }
 
-  .background-block .img-block {
-    display: none;
-  }
-  .img-block img {
-    display: none;
-  }
-  .banner .background-text {
-    text-align: center;
-    padding: 0 1rem;
+  section .card-wrapper{
     margin: 0 auto;
   }
-  .background-text h2 {
-    padding: 1rem 1rem;
-  }
 
-  .title-wrapper-catalogo p {
-    position: relative;
-    left: 0px;
-  }
-
-  .title-wrapper-catalogo h3 {
-    position: relative;
-    left: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .background-text p,
-  .background-text h2 {
-    margin: auto;
-  }
-
-  .card-wrapper {
-    justify-items: center;
-  }
-
-  .card-item {
-    min-width: 286px;
-    width: 60%;
-    
+  section .card-item{
+    width: 85vw;
   }
 }
